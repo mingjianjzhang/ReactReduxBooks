@@ -1,0 +1,25 @@
+Redux:
+
+A reducer is a function that returns a piece of the application state, in the form of an object.
+
+A Container(smart component, as opposed to normal react dumb components) is a react component that has a direct connection to the redux state. React-Redux is what forms the bridge between the two libraries.
+
+Only the most parent component that needs a connection to Redux for data needs to be a container. In the books example, Not App, not BookDetail, but BookList is the right one to make into a container. 
+
+How to connect redux to react?
+By setting the props of a react component to the redux state. 
+
+ACTIONS:
+action-creator returns an object, is triggered by a user event. 
+action is just an object. 
+that action is then set to all reducers, which passes through a switch statement to determine if the action is relevant. 
+
+All reducers get two arguments, current state and action.
+
+So now redux has taken over the application state, no tie to component state. 
+
+
+
+(Refreshers:
+	A word imports the whole object from a library; what's wrapped in curly braces will pull off just a single property
+)
